@@ -1,0 +1,880 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F22CCC6C224AF441005B5779 /* UpdateBalanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CCC6B224AF441005B5779 /* UpdateBalanceInterfaceController.swift */; };
+		F258518222371C85002C20C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258518122371C85002C20C7 /* AppDelegate.swift */; };
+		F258518422371C85002C20C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258518322371C85002C20C7 /* ViewController.swift */; };
+		F258518722371C85002C20C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F258518522371C85002C20C7 /* Main.storyboard */; };
+		F258518922371C8A002C20C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F258518822371C8A002C20C7 /* Assets.xcassets */; };
+		F258518C22371C8A002C20C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F258518A22371C8A002C20C7 /* LaunchScreen.storyboard */; };
+		F258519722371C8A002C20C7 /* SaldoRecargaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258519622371C8A002C20C7 /* SaldoRecargaTests.swift */; };
+		F25851A222371C8A002C20C7 /* SaldoRecargaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25851A122371C8A002C20C7 /* SaldoRecargaUITests.swift */; };
+		F25851A722371C8A002C20C7 /* SaldoRecarga WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F25851A622371C8A002C20C7 /* SaldoRecarga WatchKit App.app */; };
+		F25851AD22371C8A002C20C7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25851AB22371C8A002C20C7 /* Interface.storyboard */; };
+		F25851AF22371C8A002C20C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25851AE22371C8A002C20C7 /* Assets.xcassets */; };
+		F25851B622371C8B002C20C7 /* SaldoRecarga WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F25851B522371C8B002C20C7 /* SaldoRecarga WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F25851BB22371C8B002C20C7 /* MainScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25851BA22371C8B002C20C7 /* MainScreenController.swift */; };
+		F25851BD22371C8B002C20C7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25851BC22371C8B002C20C7 /* ExtensionDelegate.swift */; };
+		F25851BF22371C8B002C20C7 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25851BE22371C8B002C20C7 /* NotificationController.swift */; };
+		F25851C122371C8B002C20C7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25851C022371C8B002C20C7 /* ComplicationController.swift */; };
+		F25851C322371C8B002C20C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25851C222371C8B002C20C7 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F258519322371C8A002C20C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F258517622371C85002C20C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F258517D22371C85002C20C7;
+			remoteInfo = SaldoRecarga;
+		};
+		F258519E22371C8A002C20C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F258517622371C85002C20C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F258517D22371C85002C20C7;
+			remoteInfo = SaldoRecarga;
+		};
+		F25851A822371C8A002C20C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F258517622371C85002C20C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F25851A522371C8A002C20C7;
+			remoteInfo = "SaldoRecarga WatchKit App";
+		};
+		F25851B722371C8B002C20C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F258517622371C85002C20C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F25851B422371C8B002C20C7;
+			remoteInfo = "SaldoRecarga WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F25851CB22371C8B002C20C7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F25851B622371C8B002C20C7 /* SaldoRecarga WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25851CF22371C8B002C20C7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F25851A722371C8A002C20C7 /* SaldoRecarga WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F22CCC6B224AF441005B5779 /* UpdateBalanceInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateBalanceInterfaceController.swift; sourceTree = "<group>"; };
+		F258517E22371C85002C20C7 /* SaldoRecarga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaldoRecarga.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F258518122371C85002C20C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F258518322371C85002C20C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F258518622371C85002C20C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F258518822371C8A002C20C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F258518B22371C8A002C20C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F258518D22371C8A002C20C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F258519222371C8A002C20C7 /* SaldoRecargaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaldoRecargaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F258519622371C8A002C20C7 /* SaldoRecargaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaldoRecargaTests.swift; sourceTree = "<group>"; };
+		F258519822371C8A002C20C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F258519D22371C8A002C20C7 /* SaldoRecargaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaldoRecargaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25851A122371C8A002C20C7 /* SaldoRecargaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaldoRecargaUITests.swift; sourceTree = "<group>"; };
+		F25851A322371C8A002C20C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25851A622371C8A002C20C7 /* SaldoRecarga WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SaldoRecarga WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25851AC22371C8A002C20C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F25851AE22371C8A002C20C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F25851B022371C8A002C20C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25851B522371C8B002C20C7 /* SaldoRecarga WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SaldoRecarga WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25851BA22371C8B002C20C7 /* MainScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenController.swift; sourceTree = "<group>"; };
+		F25851BC22371C8B002C20C7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F25851BE22371C8B002C20C7 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F25851C022371C8B002C20C7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F25851C222371C8B002C20C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F25851C422371C8B002C20C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25851C522371C8B002C20C7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F258517B22371C85002C20C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F258518F22371C8A002C20C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F258519A22371C8A002C20C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25851B222371C8B002C20C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F258517522371C85002C20C7 = {
+			isa = PBXGroup;
+			children = (
+				F258518022371C85002C20C7 /* SaldoRecarga */,
+				F258519522371C8A002C20C7 /* SaldoRecargaTests */,
+				F25851A022371C8A002C20C7 /* SaldoRecargaUITests */,
+				F25851AA22371C8A002C20C7 /* SaldoRecarga WatchKit App */,
+				F25851B922371C8B002C20C7 /* SaldoRecarga WatchKit Extension */,
+				F258517F22371C85002C20C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F258517F22371C85002C20C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F258517E22371C85002C20C7 /* SaldoRecarga.app */,
+				F258519222371C8A002C20C7 /* SaldoRecargaTests.xctest */,
+				F258519D22371C8A002C20C7 /* SaldoRecargaUITests.xctest */,
+				F25851A622371C8A002C20C7 /* SaldoRecarga WatchKit App.app */,
+				F25851B522371C8B002C20C7 /* SaldoRecarga WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F258518022371C85002C20C7 /* SaldoRecarga */ = {
+			isa = PBXGroup;
+			children = (
+				F258518122371C85002C20C7 /* AppDelegate.swift */,
+				F258518322371C85002C20C7 /* ViewController.swift */,
+				F258518522371C85002C20C7 /* Main.storyboard */,
+				F258518822371C8A002C20C7 /* Assets.xcassets */,
+				F258518A22371C8A002C20C7 /* LaunchScreen.storyboard */,
+				F258518D22371C8A002C20C7 /* Info.plist */,
+			);
+			path = SaldoRecarga;
+			sourceTree = "<group>";
+		};
+		F258519522371C8A002C20C7 /* SaldoRecargaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F258519622371C8A002C20C7 /* SaldoRecargaTests.swift */,
+				F258519822371C8A002C20C7 /* Info.plist */,
+			);
+			path = SaldoRecargaTests;
+			sourceTree = "<group>";
+		};
+		F25851A022371C8A002C20C7 /* SaldoRecargaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F25851A122371C8A002C20C7 /* SaldoRecargaUITests.swift */,
+				F25851A322371C8A002C20C7 /* Info.plist */,
+			);
+			path = SaldoRecargaUITests;
+			sourceTree = "<group>";
+		};
+		F25851AA22371C8A002C20C7 /* SaldoRecarga WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F25851AB22371C8A002C20C7 /* Interface.storyboard */,
+				F25851AE22371C8A002C20C7 /* Assets.xcassets */,
+				F25851B022371C8A002C20C7 /* Info.plist */,
+			);
+			path = "SaldoRecarga WatchKit App";
+			sourceTree = "<group>";
+		};
+		F25851B922371C8B002C20C7 /* SaldoRecarga WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F25851BA22371C8B002C20C7 /* MainScreenController.swift */,
+				F25851BC22371C8B002C20C7 /* ExtensionDelegate.swift */,
+				F25851BE22371C8B002C20C7 /* NotificationController.swift */,
+				F25851C022371C8B002C20C7 /* ComplicationController.swift */,
+				F25851C222371C8B002C20C7 /* Assets.xcassets */,
+				F25851C422371C8B002C20C7 /* Info.plist */,
+				F25851C522371C8B002C20C7 /* PushNotificationPayload.apns */,
+				F22CCC6B224AF441005B5779 /* UpdateBalanceInterfaceController.swift */,
+			);
+			path = "SaldoRecarga WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F258517D22371C85002C20C7 /* SaldoRecarga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F25851D022371C8B002C20C7 /* Build configuration list for PBXNativeTarget "SaldoRecarga" */;
+			buildPhases = (
+				F258517A22371C85002C20C7 /* Sources */,
+				F258517B22371C85002C20C7 /* Frameworks */,
+				F258517C22371C85002C20C7 /* Resources */,
+				F25851CF22371C8B002C20C7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F25851A922371C8A002C20C7 /* PBXTargetDependency */,
+			);
+			name = SaldoRecarga;
+			productName = SaldoRecarga;
+			productReference = F258517E22371C85002C20C7 /* SaldoRecarga.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F258519122371C8A002C20C7 /* SaldoRecargaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F25851D322371C8B002C20C7 /* Build configuration list for PBXNativeTarget "SaldoRecargaTests" */;
+			buildPhases = (
+				F258518E22371C8A002C20C7 /* Sources */,
+				F258518F22371C8A002C20C7 /* Frameworks */,
+				F258519022371C8A002C20C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F258519422371C8A002C20C7 /* PBXTargetDependency */,
+			);
+			name = SaldoRecargaTests;
+			productName = SaldoRecargaTests;
+			productReference = F258519222371C8A002C20C7 /* SaldoRecargaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F258519C22371C8A002C20C7 /* SaldoRecargaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F25851D622371C8B002C20C7 /* Build configuration list for PBXNativeTarget "SaldoRecargaUITests" */;
+			buildPhases = (
+				F258519922371C8A002C20C7 /* Sources */,
+				F258519A22371C8A002C20C7 /* Frameworks */,
+				F258519B22371C8A002C20C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F258519F22371C8A002C20C7 /* PBXTargetDependency */,
+			);
+			name = SaldoRecargaUITests;
+			productName = SaldoRecargaUITests;
+			productReference = F258519D22371C8A002C20C7 /* SaldoRecargaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F25851A522371C8A002C20C7 /* SaldoRecarga WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F25851CC22371C8B002C20C7 /* Build configuration list for PBXNativeTarget "SaldoRecarga WatchKit App" */;
+			buildPhases = (
+				F25851A422371C8A002C20C7 /* Resources */,
+				F25851CB22371C8B002C20C7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F25851B822371C8B002C20C7 /* PBXTargetDependency */,
+			);
+			name = "SaldoRecarga WatchKit App";
+			productName = "SaldoRecarga WatchKit App";
+			productReference = F25851A622371C8A002C20C7 /* SaldoRecarga WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F25851B422371C8B002C20C7 /* SaldoRecarga WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F25851C822371C8B002C20C7 /* Build configuration list for PBXNativeTarget "SaldoRecarga WatchKit Extension" */;
+			buildPhases = (
+				F25851B122371C8B002C20C7 /* Sources */,
+				F25851B222371C8B002C20C7 /* Frameworks */,
+				F25851B322371C8B002C20C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SaldoRecarga WatchKit Extension";
+			productName = "SaldoRecarga WatchKit Extension";
+			productReference = F25851B522371C8B002C20C7 /* SaldoRecarga WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F258517622371C85002C20C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Vinicius Valvassori";
+				TargetAttributes = {
+					F258517D22371C85002C20C7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F258519122371C8A002C20C7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F258517D22371C85002C20C7;
+					};
+					F258519C22371C8A002C20C7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F258517D22371C85002C20C7;
+					};
+					F25851A522371C8A002C20C7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F25851B422371C8B002C20C7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F258517922371C85002C20C7 /* Build configuration list for PBXProject "SaldoRecarga" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F258517522371C85002C20C7;
+			productRefGroup = F258517F22371C85002C20C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F258517D22371C85002C20C7 /* SaldoRecarga */,
+				F258519122371C8A002C20C7 /* SaldoRecargaTests */,
+				F258519C22371C8A002C20C7 /* SaldoRecargaUITests */,
+				F25851A522371C8A002C20C7 /* SaldoRecarga WatchKit App */,
+				F25851B422371C8B002C20C7 /* SaldoRecarga WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F258517C22371C85002C20C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F258518C22371C8A002C20C7 /* LaunchScreen.storyboard in Resources */,
+				F258518922371C8A002C20C7 /* Assets.xcassets in Resources */,
+				F258518722371C85002C20C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F258519022371C8A002C20C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F258519B22371C8A002C20C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25851A422371C8A002C20C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25851AF22371C8A002C20C7 /* Assets.xcassets in Resources */,
+				F25851AD22371C8A002C20C7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25851B322371C8B002C20C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25851C322371C8B002C20C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F258517A22371C85002C20C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F258518422371C85002C20C7 /* ViewController.swift in Sources */,
+				F258518222371C85002C20C7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F258518E22371C8A002C20C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F258519722371C8A002C20C7 /* SaldoRecargaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F258519922371C8A002C20C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25851A222371C8A002C20C7 /* SaldoRecargaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25851B122371C8B002C20C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25851BF22371C8B002C20C7 /* NotificationController.swift in Sources */,
+				F22CCC6C224AF441005B5779 /* UpdateBalanceInterfaceController.swift in Sources */,
+				F25851C122371C8B002C20C7 /* ComplicationController.swift in Sources */,
+				F25851BD22371C8B002C20C7 /* ExtensionDelegate.swift in Sources */,
+				F25851BB22371C8B002C20C7 /* MainScreenController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F258519422371C8A002C20C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F258517D22371C85002C20C7 /* SaldoRecarga */;
+			targetProxy = F258519322371C8A002C20C7 /* PBXContainerItemProxy */;
+		};
+		F258519F22371C8A002C20C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F258517D22371C85002C20C7 /* SaldoRecarga */;
+			targetProxy = F258519E22371C8A002C20C7 /* PBXContainerItemProxy */;
+		};
+		F25851A922371C8A002C20C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F25851A522371C8A002C20C7 /* SaldoRecarga WatchKit App */;
+			targetProxy = F25851A822371C8A002C20C7 /* PBXContainerItemProxy */;
+		};
+		F25851B822371C8B002C20C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F25851B422371C8B002C20C7 /* SaldoRecarga WatchKit Extension */;
+			targetProxy = F25851B722371C8B002C20C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F258518522371C85002C20C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F258518622371C85002C20C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F258518A22371C8A002C20C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F258518B22371C8A002C20C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F25851AB22371C8A002C20C7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F25851AC22371C8A002C20C7 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F25851C622371C8B002C20C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F25851C722371C8B002C20C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F25851C922371C8B002C20C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TG2GQ698YY;
+				INFOPLIST_FILE = "SaldoRecarga WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitreko.SaldoRecarga.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		F25851CA22371C8B002C20C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TG2GQ698YY;
+				INFOPLIST_FILE = "SaldoRecarga WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitreko.SaldoRecarga.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		F25851CD22371C8B002C20C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TG2GQ698YY;
+				IBSC_MODULE = SaldoRecarga_WatchKit_Extension;
+				INFOPLIST_FILE = "SaldoRecarga WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitreko.SaldoRecarga.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		F25851CE22371C8B002C20C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TG2GQ698YY;
+				IBSC_MODULE = SaldoRecarga_WatchKit_Extension;
+				INFOPLIST_FILE = "SaldoRecarga WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitreko.SaldoRecarga.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		F25851D122371C8B002C20C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TG2GQ698YY;
+				INFOPLIST_FILE = SaldoRecarga/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitreko.SaldoRecarga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F25851D222371C8B002C20C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TG2GQ698YY;
+				INFOPLIST_FILE = SaldoRecarga/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitreko.SaldoRecarga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F25851D422371C8B002C20C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TG2GQ698YY;
+				INFOPLIST_FILE = SaldoRecargaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitreko.SaldoRecargaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaldoRecarga.app/SaldoRecarga";
+			};
+			name = Debug;
+		};
+		F25851D522371C8B002C20C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TG2GQ698YY;
+				INFOPLIST_FILE = SaldoRecargaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitreko.SaldoRecargaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaldoRecarga.app/SaldoRecarga";
+			};
+			name = Release;
+		};
+		F25851D722371C8B002C20C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TG2GQ698YY;
+				INFOPLIST_FILE = SaldoRecargaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitreko.SaldoRecargaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SaldoRecarga;
+			};
+			name = Debug;
+		};
+		F25851D822371C8B002C20C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TG2GQ698YY;
+				INFOPLIST_FILE = SaldoRecargaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitreko.SaldoRecargaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SaldoRecarga;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F258517922371C85002C20C7 /* Build configuration list for PBXProject "SaldoRecarga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25851C622371C8B002C20C7 /* Debug */,
+				F25851C722371C8B002C20C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F25851C822371C8B002C20C7 /* Build configuration list for PBXNativeTarget "SaldoRecarga WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25851C922371C8B002C20C7 /* Debug */,
+				F25851CA22371C8B002C20C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F25851CC22371C8B002C20C7 /* Build configuration list for PBXNativeTarget "SaldoRecarga WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25851CD22371C8B002C20C7 /* Debug */,
+				F25851CE22371C8B002C20C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F25851D022371C8B002C20C7 /* Build configuration list for PBXNativeTarget "SaldoRecarga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25851D122371C8B002C20C7 /* Debug */,
+				F25851D222371C8B002C20C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F25851D322371C8B002C20C7 /* Build configuration list for PBXNativeTarget "SaldoRecargaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25851D422371C8B002C20C7 /* Debug */,
+				F25851D522371C8B002C20C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F25851D622371C8B002C20C7 /* Build configuration list for PBXNativeTarget "SaldoRecargaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25851D722371C8B002C20C7 /* Debug */,
+				F25851D822371C8B002C20C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F258517622371C85002C20C7 /* Project object */;
+}
