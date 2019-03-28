@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,91 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SaldoRecargaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo Recarga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jc-Ch-f8X">
+                                <rect key="frame" x="132" y="109" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Controle o saldo da sua recarga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHn-MO-geV">
+                                <rect key="frame" x="66" y="193" width="243" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toda a operação é feita no Watch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJW-vB-UQq">
+                                <rect key="frame" x="59.5" y="233" width="256" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toque em saldo para atualizar o saldo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AK4-1G-btA">
+                                <rect key="frame" x="43" y="277" width="289" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toque em tarifa para ajustar a tarifa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbl-00-RXM">
+                                <rect key="frame" x="52" y="323" width="271" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não fique mais preso na catraca sem saldo!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t27-52-WH8">
+                                <rect key="frame" x="21" y="420" width="333" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aperte 'Descontar' para aplicar a tarifa ao saldo atual" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsS-cc-e5d">
+                                <rect key="frame" x="20" y="352" width="335" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kHn-MO-geV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="03e-aX-9um"/>
+                            <constraint firstItem="HsS-cc-e5d" firstAttribute="top" secondItem="bbl-00-RXM" secondAttribute="bottom" constant="8" id="0aQ-fy-9sg"/>
+                            <constraint firstItem="HsS-cc-e5d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="13I-YH-pBO"/>
+                            <constraint firstItem="t27-52-WH8" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="21" id="2VD-UZ-VIP"/>
+                            <constraint firstItem="5jc-Ch-f8X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3uS-Sr-oD2"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="mJW-vB-UQq" secondAttribute="trailing" constant="59.5" id="5Jm-vp-j9K"/>
+                            <constraint firstItem="t27-52-WH8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Jf-mG-Ko5"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="t27-52-WH8" secondAttribute="trailing" constant="21" id="790-f6-9qa"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="bbl-00-RXM" secondAttribute="trailing" constant="52" id="FzO-ml-i23"/>
+                            <constraint firstItem="bbl-00-RXM" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="52" id="GTk-4J-wGh"/>
+                            <constraint firstItem="kHn-MO-geV" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="66" id="NUJ-I6-5xN"/>
+                            <constraint firstItem="bbl-00-RXM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PP0-nv-pWV"/>
+                            <constraint firstItem="mJW-vB-UQq" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="59.5" id="Sl9-VQ-FMn"/>
+                            <constraint firstItem="HsS-cc-e5d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UEk-rV-AkV"/>
+                            <constraint firstItem="5jc-Ch-f8X" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="89" id="Z1d-Sb-i8o"/>
+                            <constraint firstItem="bbl-00-RXM" firstAttribute="top" secondItem="AK4-1G-btA" secondAttribute="bottom" constant="25" id="Zwv-Nq-rRa"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="kHn-MO-geV" secondAttribute="trailing" constant="66" id="ayB-ho-0mt"/>
+                            <constraint firstItem="t27-52-WH8" firstAttribute="top" secondItem="HsS-cc-e5d" secondAttribute="bottom" constant="27" id="bIa-42-Xgk"/>
+                            <constraint firstItem="mJW-vB-UQq" firstAttribute="top" secondItem="kHn-MO-geV" secondAttribute="bottom" constant="19" id="hTD-pg-usi"/>
+                            <constraint firstItem="5jc-Ch-f8X" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="132" id="ihg-Si-BLz"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="AK4-1G-btA" secondAttribute="trailing" constant="43" id="ior-uT-cgw"/>
+                            <constraint firstItem="AK4-1G-btA" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="43" id="kzR-oK-rYH"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="5jc-Ch-f8X" secondAttribute="trailing" constant="132" id="lXn-3v-dfe"/>
+                            <constraint firstAttribute="trailing" secondItem="HsS-cc-e5d" secondAttribute="trailing" constant="20" id="lge-6p-Ssp"/>
+                            <constraint firstItem="AK4-1G-btA" firstAttribute="top" secondItem="mJW-vB-UQq" secondAttribute="bottom" constant="23" id="lzV-Uy-A8b"/>
+                            <constraint firstItem="mJW-vB-UQq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p8P-KZ-rso"/>
+                            <constraint firstItem="kHn-MO-geV" firstAttribute="top" secondItem="5jc-Ch-f8X" secondAttribute="bottom" constant="63" id="pvM-Gl-MrH"/>
+                            <constraint firstItem="AK4-1G-btA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sxi-zU-11m"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="101.19940029985008"/>
         </scene>
     </scenes>
 </document>

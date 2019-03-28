@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="249" y="-109"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Saldo Recarga-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SaldoRecarga_WatchKit_App" customModuleProvider="target">
+                <controller title="Saldo Recarga" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SaldoRecarga" customModuleProvider="target">
                     <items>
                         <label alignment="center" text="Saldo Atual" id="rmb-PN-mgz"/>
                         <button width="1" height="23" alignment="left" title="125,50" id="y4V-Ow-fmX">
@@ -160,14 +160,14 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SaldoRecarga_WatchKit_App" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SaldoRecarga" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="488" y="689"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="SaldoRecarga_WatchKit_App" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="SaldoRecarga" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="432" y="296"/>
         </scene>
