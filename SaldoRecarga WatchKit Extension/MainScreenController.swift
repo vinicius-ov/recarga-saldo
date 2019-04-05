@@ -15,23 +15,22 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var balanceButton: WKInterfaceButton!
     @IBOutlet weak var tariffButton: WKInterfaceButton!
     @IBOutlet weak var cashTariffButton: WKInterfaceButton!
+    var firstTimeAlert = true
+    let OK_ACTION = WKAlertAction.init(title: "OK", style: .default, handler: {})
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-       
-        
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        var balance = UserDefaults.standard.double(forKey: "balance")
+        let balance = UserDefaults.standard.double(forKey: "balance")
         balanceButton.setTitle(String(format: "%.2f", balance))
-        var tariff = UserDefaults.standard.double(forKey: "tariff")
+        let tariff = UserDefaults.standard.double(forKey: "tariff")
         tariffButton.setTitle(String(format: "%.2f", tariff))
-        if balance < tariff {
-            presentAlert(withTitle: "Saldo insuficiente", message: "Recarregue agora para não ficar preso na catraca!", preferredStyle: .sideBySideButtonsAlert, actions: [])
+        if balance < tariff && firstTimeAlert == true{
+            presentAlertNoFunds()            
         }
     }
     
@@ -42,18 +41,24 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func discountTariff() {
         var balance = UserDefaults.standard.double(forKey: "balance")
-        var tariff = UserDefaults.standard.double(forKey: "tariff")
+        let tariff = UserDefaults.standard.double(forKey: "tariff")
         if balance > tariff {
             balance = balance - tariff
             UserDefaults.standard.set(balance, forKey: "balance")
             balanceButton.setTitle(String(format: "%.2f", balance))
         }else{
-            presentAlert(withTitle: "Saldo insuficiente", message: "Recarregue agora para não ficar preso na catraca!", preferredStyle: .actionSheet, actions: [])
+            presentAlertNoFunds()
         }
     }
     
     override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
+        firstTimeAlert = true
         return segueIdentifier
+    }
+    
+    func presentAlertNoFunds(){
+        firstTimeAlert = false
+        presentAlert(withTitle: "Saldo insuficiente", message: "Recarregue agora para não ficar preso na catraca!", preferredStyle: .actionSheet, actions: [OK_ACTION])
     }
 
 }
