@@ -25,11 +25,11 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        let balance = UserDefaults.standard.double(forKey: "balance")
+        let balance = getBalance()
         balanceButton.setTitle(String(format: "%.2f", balance))
-        let tariff = UserDefaults.standard.double(forKey: "tariff")
+        let tariff = getTariff()
         tariffButton.setTitle(String(format: "%.2f", tariff))
-        if balance < tariff && firstTimeAlert == true{
+        if !isBalanceHigherThanTariff(balance: balance, tariff: tariff) && firstTimeAlert == true{
             presentAlertNoFunds()            
         }
     }
@@ -40,9 +40,9 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func discountTariff() {
-        var balance = UserDefaults.standard.double(forKey: "balance")
-        let tariff = UserDefaults.standard.double(forKey: "tariff")
-        if balance > tariff {
+        var balance = getBalance()
+        let tariff = getTariff()
+        if  isBalanceHigherThanTariff(balance: balance, tariff: tariff){
             balance = balance - tariff
             UserDefaults.standard.set(balance, forKey: "balance")
             balanceButton.setTitle(String(format: "%.2f", balance))
@@ -59,6 +59,18 @@ class InterfaceController: WKInterfaceController {
     func presentAlertNoFunds(){
         firstTimeAlert = false
         presentAlert(withTitle: "Saldo insuficiente", message: "Recarregue agora para não ficar preso na catraca!", preferredStyle: .actionSheet, actions: [OK_ACTION])
+    }
+    
+    func isBalanceHigherThanTariff(balance:Double, tariff:Double) -> Bool{
+        return balance > tariff
+    }
+    
+    func getBalance() -> Double {
+        return UserDefaults.standard.double(forKey: "balance")
+    }
+    
+    func getTariff() -> Double{
+        return UserDefaults.standard.double(forKey: "tariff")
     }
 
 }
