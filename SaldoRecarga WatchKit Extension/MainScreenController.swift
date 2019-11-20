@@ -29,7 +29,7 @@ class InterfaceController: WKInterfaceController {
         balanceButton.setTitle(String(format: "%.2f", balance))
         let tariff = getTariff()
         tariffButton.setTitle(String(format: "%.2f", tariff))
-        if !isBalanceHigherThanTariff(balance: balance, tariff: tariff) && firstTimeAlert == true{
+        if !isBalance(balance, higherThanTariff: tariff) && firstTimeAlert == true{
             presentAlertNoFunds()            
         }
     }
@@ -42,7 +42,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func discountTariff() {
         var balance = getBalance()
         let tariff = getTariff()
-        if  isBalanceHigherThanTariff(balance: balance, tariff: tariff){
+        if isBalance(balance, higherThanTariff: tariff) {
             balance = balance - tariff
             UserDefaults.standard.set(balance, forKey: "balance")
             balanceButton.setTitle(String(format: "%.2f", balance))
@@ -61,7 +61,7 @@ class InterfaceController: WKInterfaceController {
         presentAlert(withTitle: "Saldo insuficiente", message: "Recarregue agora para não ficar preso na catraca!", preferredStyle: .actionSheet, actions: [OK_ACTION])
     }
     
-    func isBalanceHigherThanTariff(balance:Double, tariff:Double) -> Bool{
+    func isBalance(_ balance: Double, higherThanTariff tariff: Double) -> Bool {
         return balance > tariff
     }
     
