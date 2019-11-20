@@ -2,12 +2,11 @@
 //  SaldoRecargaTests.swift
 //  SaldoRecargaTests
 //
-//  Created by Vinicius Valvassori on 11/03/19.
+//  Created by Bemacash on 20/11/19.
 //  Copyright © 2019 Vinicius Valvassori. All rights reserved.
 //
 
 import XCTest
-@testable import SaldoRecarga
 
 class SaldoRecargaTests: XCTestCase {
 
@@ -26,7 +25,7 @@ class SaldoRecargaTests: XCTestCase {
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
